@@ -1,0 +1,183 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins', sans-serif;
+    background:#1d1f14;
+    color:#d2dede;
+    overflow-x:hidden;
+}
+
+/* HERO */
+
+.hero{
+    position:relative;
+    height:100vh;
+    background-image:url('Mangrove_delCarmen.png');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.overlay{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:rgba(29,31,20,0.75);
+}
+
+.philippines-design{
+    position:absolute;
+    width:500px;
+    opacity:0.12;
+    z-index:1;
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+    max-width:1000px;
+    padding:20px;
+}
+
+.hero h1{
+    font-size:3rem;
+    color:#d2dede;
+    margin-bottom:25px;
+    line-height:1.3;
+}
+
+.subtitle{
+    font-size:1.2rem;
+    color:#7b9493;
+    line-height:1.8;
+}
+
+/* SECTIONS */
+
+section{
+    padding:90px 10%;
+}
+
+h2{
+    font-size:2.2rem;
+    margin-bottom:40px;
+    color:#d2dede;
+    border-left:6px solid #63601f;
+    padding-left:18px;
+}
+
+.about{
+    background:#2c3d43;
+}
+
+.about-container p{
+    margin-bottom:25px;
+    line-height:2;
+    font-size:1.05rem;
+    color:#d2dede;
+}
+
+/* MAP SECTION */
+
+.map-section{
+    background:#1d1f14;
+    text-align:center;
+}
+
+.map-container{
+    margin:auto;
+    max-width:1000px;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 0 30px rgba(0,0,0,0.5);
+}
+
+.map-container img{
+    width:100%;
+    display:block;
+}
+
+.map-caption{
+    margin-top:25px;
+    color:#7b9493;
+    line-height:1.8;
+    font-size:0.95rem;
+}
+
+/* HIGHLIGHTS */
+
+.highlights{
+    background:#2c3d43;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(240px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:#1d1f14;
+    padding:35px;
+    border-radius:20px;
+    transition:0.3s;
+    border:1px solid #7b9493;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card h3{
+    color:#63601f;
+    margin-bottom:18px;
+    font-size:1.6rem;
+}
+
+.card p{
+    line-height:1.8;
+    color:#d2dede;
+}
+
+/* FOOTER */
+
+footer{
+    background:#1d1f14;
+    text-align:center;
+    padding:30px;
+    border-top:1px solid #7b9493;
+}
+
+footer p{
+    color:#7b9493;
+    line-height:1.8;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+    .hero h1{
+        font-size:2rem;
+    }
+
+    .subtitle{
+        font-size:1rem;
+    }
+
+    .philippines-design{
+        width:300px;
+    }
+
+    section{
+        padding:70px 8%;
+    }
+
+}
